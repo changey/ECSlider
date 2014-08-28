@@ -1,0 +1,27 @@
+#slider-container {
+    width: 350px;
+    height: 50px;    
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+}
+
+#slider-background {
+    position: absolute;
+    left: 24px;
+    margin: 0 auto;
+    height:15px;
+    width: 300px;
+    background: url('images/background.png') no-repeat left top;
+}
+
+#slider-background .ui-slider-handle {
+    width: 38px;
+    height:39px;
+    background: url('images/pikachu.png') no-repeat left top;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -8px;
+    cursor: pointer;
+    outline: none;
+}
