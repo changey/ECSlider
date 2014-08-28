@@ -7,18 +7,18 @@ $(document).ready(function() {
 		range: "min",
 		animate: true,
     slide: function(event, ui) {
-      setVolume((ui.value) / 100);
+      setValue((ui.value) / 100);
     }
   });
 
-  var myMedia = document.createElement('audio');
-  $('#slider-container').append(myMedia);
-  myMedia.id = "myMedia";
+  var mySlider = document.createElement('value');
+  $('#slider-container').append(mySlider);
+  mySlider.id = "mySlider";
 
 });
 
 
-function setVolume(myVolume) {
-    var myMedia = document.getElementById('myMedia');
-    myMedia.volume = myVolume;
+function setValue(myValue) {
+    var mySlider = document.getElementById('mySlider');
+    mySlider.value = myValue;
 }
